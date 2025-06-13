@@ -37,12 +37,25 @@ export default function Home() {
                     </div>
 
                     {/* Right side */}
-                    <div className="basis-[65%] bg-red-500 min-h-[100%] w-[100%]">
-                        <div className="basis-[60%] relative bg-cover bg-center flex items-center justify-center p-10" style={{ backgroundImage: "url('/img/bg-naturevo.jpg')" }}>
-                            <div className="text-center text-white">
-                                <Image src="/img/sulfoprill.png" alt="Sulfoprill" width={160} height={160} className="mx-auto" />
-                                <h2 className="text-xl mt-4 font-semibold">Produsul săptămânii</h2>
-                                <button className="mt-4 px-5 py-2 rounded-full bg-yellow-400 text-black font-bold">VEZI MAI MULTE</button>
+                    <div className="basis-[65%] flex-row bg-red-500 min-h-[100%] w-[100%]">
+                        <div className="flex w-full h-full">
+                            <div
+                                style={{ backgroundImage: "url('/img/slide-bg.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}
+                                className="h-full flex-1 bg-blue-500 transition-all duration-300 hover:grow-4 hover:shadow-lg"
+                            >
+                                box 1
+                            </div>
+                            <div
+                                style={{ backgroundImage: "url('/img/slide-bg.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}
+                                className="h-full flex-1 bg-green-500 transition-all duration-300 hover:grow-4 hover:shadow-lg"
+                            >
+                                box 2
+                            </div>
+                            <div
+                                style={{ backgroundImage: "url('/img/slide-bg.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}
+                                className="h-full flex-1 bg-yellow-500 transition-all duration-300 hover:grow-4 hover:shadow-lg"
+                            >
+                                box 3
                             </div>
                         </div>
                     </div>
